@@ -155,7 +155,7 @@ namespace Maxwell.Pages
         private async Task InitializeDocumentLookupAsync()
         {
             var text = await _httpClient
-                .GetStringAsync("/data/Maxwell.txt");
+                .GetStringAsync("/MaxwellDeposition/data/Maxwell.txt");
 
             ParseText(text);
         }
